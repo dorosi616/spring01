@@ -12,8 +12,13 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.projectlombok:lombok:1.18.18'
+    implementation 'org.projectlombok:lombok:1.18.18'
+
     // @ = 어노테이션 : 의존성 부여 -> 프로그램 데이터 제공받기
     compile('org.springframework.boot:spring-boot-starter-web') // 스프링부트 어노테이션 사용
+    compile('org.springframework.boot:spring-boot-starter-data-jpa') // JPA 어노테이션 사용
+    compile('org.projectlombok:lombok') // 프로젝트에 룸복 사용
 }
 
 test {
