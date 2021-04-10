@@ -1,0 +1,21 @@
+plugins { // 무료버전 기준
+    id 'java' // 자바 빌드 id
+    id 'org.springframework.boot' version '2.2.7.RELEASE' // 스프링부트 빌드 id
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE' // 디펜던시 빌드 id
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // @ = 어노테이션 : 의존성 부여 -> 프로그램 데이터 제공받기
+    compile('org.springframework.boot:spring-boot-starter-web') // 스프링부트 어노테이션 사용
+}
+
+test {
+    useJUnitPlatform()
+}
